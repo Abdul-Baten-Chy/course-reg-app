@@ -1,0 +1,66 @@
+[
+    {
+      "image": "../src/assets/Rectangle 2-2.png",
+      "course_title": "Introduction to C Programming",
+      "course_details": "Introduction to C Programming: A foundational course exploring the fundamentals of the C programming language, from syntax to data structures.",
+      "course_credit_hour": 3,
+      "course_price": 99
+    },
+    {
+      "image": "../src/assets/Rectangle 2-3.png",
+      "course_title": "Introduction to Algorithms",
+      "course_details": "A comprehensive overview of algorithm design and analysis, covering essential techniques and data structures for efficient problem-solving.comprehensive overview of algorithm",
+      "course_credit_hour": 4,
+      "course_price": 129
+    },
+    {
+      "image": "../src/assets/Rectangle 2-4.png",
+      "course_title": "Introduction to C++ for DSA",
+      "course_details": "A course focused on using the C++ programming language to teach Data Structures and Algorithms (DSA) concepts and implementations.",
+      "course_credit_hour": 2,
+      "course_price": 79
+    },
+    {
+      "image": "../src/assets/Rectangle 3.png",
+      "course_title": "Basic Data Structures",
+      "course_details": "An introductory course covering fundamental data structures such as arrays, linked lists, stacks, and queues, essential for organizing and manipulating data in computer science.",
+      "course_credit_hour": 5,
+      "course_price": 149
+    },
+    {
+      "image": "../src/assets/Rectangle 2.png",
+      "course_title": "Introduction to OOP Python",
+      "course_details": "A beginner's guide to Object-Oriented Programming (OOP) principles and their implementation in the Python programming language.",
+      "course_credit_hour": 3,
+      "course_price": 99
+    },
+    {
+      "image": "../src/assets/Rectangle 2-5.png",
+      "course_title": "Software Engineering",
+      "course_details": "The systematic and disciplined approach to designing, developing, and maintaining software systems, ensuring their quality, reliability, and efficiency throughout the software development lifecycle.",
+      "course_credit_hour": 4,
+      "course_price": 129
+    },
+    {
+      "image": "../src/assets/Rectangle 3-1.png",
+      "course_title": "AWS, Cloud Computing",
+      "course_details": "Utilizing Amazon Web Services (AWS) to deliver scalable, on-demand cloud computing resources, enabling businesses to efficiently deploy, manage, and scale applications and services.",
+      "course_credit_hour": 2,
+      "course_price": 79
+    },
+    {
+      "image": "../src/assets/Rectangle 2-1.png",
+      "course_title": "Database (MySQL)",
+      "course_details": "An open-source relational database management system (RDBMS) known for its speed and reliability, used to store, retrieve, and manage structured data efficiently.",
+      "course_credit_hour": 5,
+      "course_price": 149
+    },
+    {
+      "image": "../src/assets/Rectangle 2-6.png",
+      "course_title": "Problem-Solving Part",
+      "course_details": "The phase of a task or project dedicated to identifying, analyzing, and resolving challenges or issues, typically involving critical thinking, creativity, and decision-making.",
+      "course_credit_hour": 3,
+      "course_price": 99
+    }
+  ]
+  
