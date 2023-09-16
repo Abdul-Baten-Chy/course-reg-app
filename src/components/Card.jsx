@@ -1,5 +1,6 @@
 
 import { FaDollarSign, FaBook } from 'react-icons/fa';
+import { ToastContainer } from 'react-toastify';
 const Card = ({handleAddCourseName, card}) => {
     const  {id, image, course_title, course_details, course_credit_hour, course_price}=card
     return (
@@ -19,6 +20,8 @@ const Card = ({handleAddCourseName, card}) => {
                 </div>
                 <div className="card-actions">
                     <button className="btn btn-primary w-56" onClick={()=>handleAddCourseName(card, id)}>Select</button>
+                    
+                    <ToastContainer></ToastContainer>
                 </div>
             </div>
             </div>

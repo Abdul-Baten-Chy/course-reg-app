@@ -2,6 +2,8 @@ import { useState } from 'react'
 import Cards from './components/Cards'
 import Aside from './components/Aside'
 import './index.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [courseName, setCoursename]= useState([])
@@ -12,7 +14,7 @@ function App() {
 
     const uniqueCourseName = courseName.find(card => card.id == id)
     if(uniqueCourseName){
-      alert('This course has already been selected');
+      toast('This course has already been selected');
       
     } else{
       const newTotalCredit= totalCredits + card.course_credit_hour;
@@ -23,7 +25,7 @@ function App() {
         setTotalCredits(newTotalCredit)
         setCredit(remainingCredit)
       }else{
-        alert('You cant add more than 20 credits')
+        toast('You cant add more than 20 credits')
         setCoursename(courseName)
         setTotalCredits(totalCredits)
       }
