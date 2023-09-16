@@ -57,7 +57,7 @@
     },
     {
       "id":8,
-      "image": "../src/assets/Rectangle 2-1.png",
+      "image": "https://i.ibb.co/v1yDxjd/Rectangle-3.png",
       "course_title": "Database (MySQL)",
       "course_details": "An open-source relational database management system (RDBMS) known for its speed and reliability, used to store, retrieve, and manage structured data efficiently.",
       "course_credit_hour": 5,
