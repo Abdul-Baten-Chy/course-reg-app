@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Cards from './components/Cards'
 import Aside from './components/Aside'
-
+import './index.css'
 
 function App() {
   const [courseName, setCoursename]= useState([])
@@ -12,7 +12,8 @@ function App() {
 
     const uniqueCourseName = courseName.find(card => card.id == id)
     if(uniqueCourseName){
-      alert('This course has already been selected')
+      alert('This course has already been selected');
+      
     } else{
       const newTotalCredit= totalCredits + card.course_credit_hour;
       const remainingCredit = 20 - newTotalCredit
@@ -31,11 +32,13 @@ function App() {
   }
 
    return (
-    <div className='max-w-7xl mx-auto '>
+    <div className='max-w-7xl mx-auto'>
+     <div className='mx-auto'>
      <h1 className='text-3xl font-bold text-center mt-14 mb-10'>Course Registration</h1>
-     <div className='flex flex-col md:flex-row  gap-6 justify-center'>
-      <Cards className="order-2" handleAddCourseName={handleAddCourseName}></Cards>
-      <Aside className="order-1" coUrseName={courseName} totalCredits={totalCredits} credit={credit}></Aside>
+     <div className='container-main'>
+      <Cards className="two" handleAddCourseName={handleAddCourseName}></Cards>
+      <Aside className="one" coUrseName={courseName} totalCredits={totalCredits} credit={credit}></Aside>
+     </div>
      </div>
      
     </div>

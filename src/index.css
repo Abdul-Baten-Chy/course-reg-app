@@ -5,3 +5,51 @@
 body{
 font-family: 'Inter', sans-serif;
 }
+
+.container-main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap:20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+@media screen and (max-width: 570px) {
+    .container-main{
+        grid-template-columns: 1fr;
+    }
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+    .one{
+        order: 1;
+    }
+    
+}
+@media screen and (min-width: 570px) {
+    .container-main{
+        grid-template-columns: 2fr 1fr;
+    }
+    .card-container{
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .container-main{
+        grid-template-columns: 2fr 1fr;
+    }
+    .card-container{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media screen and (min-width: 1260px) {
+    .container-main{
+        grid-template-columns: 3fr 1fr;
+    }
+    .card-container{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}

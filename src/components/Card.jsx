@@ -4,7 +4,7 @@ const Card = ({handleAddCourseName, card}) => {
     const  {id, image, course_title, course_details, course_credit_hour, course_price}=card
     return (
         <div>
-            <div className="card w-80 bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl mx-auto">
              <figure className="px-10 pt-10">
                 <img src={image} alt="Shoes" className="rounded-xl" />
             </figure>
