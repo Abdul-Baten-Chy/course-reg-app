@@ -12,8 +12,8 @@ const [data, setData]= useState([])
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4">
             {
-                data.map(card=><Card handleAddCourseName={handleAddCourseName}
-                card={card}></Card>)
+                data.map((card, idx)=><Card handleAddCourseName={handleAddCourseName}
+                card={card} key={idx}></Card>)
             }
         </div>
     );

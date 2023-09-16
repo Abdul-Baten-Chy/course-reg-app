@@ -1,7 +1,7 @@
 
-
+import { FaDollarSign, FaBook } from 'react-icons/fa';
 const Card = ({handleAddCourseName, card}) => {
-    const  {image, course_title, course_details, course_credit_hour, course_price}=card
+    const  {id, image, course_title, course_details, course_credit_hour, course_price}=card
     return (
         <div>
             <div className="card w-80 bg-base-100 shadow-xl">
@@ -10,13 +10,15 @@ const Card = ({handleAddCourseName, card}) => {
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{course_title}</h2>
-                <p>{course_details}</p>
-                <div className="flex gap-6 justify-between">
-                <p>Price : {course_price}</p>
+                <p className="text-left">{course_details}</p>
+                <div className="flex gap-6 justify-start items-center">
+                <p><FaDollarSign /></p>
+                <p className='-ml-4'> Price : {course_price}</p>
+                <p className='-mr-4'><FaBook></FaBook></p>
                 <p>Credits : {course_credit_hour}</p>
                 </div>
                 <div className="card-actions">
-                    <button className="btn btn-primary w-56" onClick={()=>handleAddCourseName(card)}>Select</button>
+                    <button className="btn btn-primary w-56" onClick={()=>handleAddCourseName(card, id)}>Select</button>
                 </div>
             </div>
             </div>
